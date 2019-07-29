@@ -23,8 +23,8 @@
 // </nav>
 
 .sub-navigation {
-  @include media(tablet) {
-    margin-top: $gutter * 1.5;
+  @include govuk-media-query($from: tablet) {
+    margin-top: $govuk-gutter * 1.5;
   }
 
   ol,
@@ -37,9 +37,9 @@
   &__item {
     @include core-16;
 
-    border-bottom: 1px $grey-3 solid;
+    border-bottom: 1px $light-grey solid;
     display: block;
-    padding: $gutter-one-third 0;
+    padding: $govuk-gutter-one-third 0;
 
     a:link {
       text-decoration: none;

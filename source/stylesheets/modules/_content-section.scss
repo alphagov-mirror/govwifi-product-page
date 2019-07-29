@@ -11,15 +11,15 @@
 // </section>
 
 .content-section {
-  margin-top: $gutter;
+  margin-top: $govuk-gutter;
 
   &__image {
     max-width: 100%;
   }
 
   &--with-top-border {
-    padding-top: $gutter;
-    border-top: 1px $grey-3 solid;
+    padding-top: $govuk-gutter;
+    border-top: 1px $light-grey solid;
 
     .content-section__first-heading {
       margin-top: 0;

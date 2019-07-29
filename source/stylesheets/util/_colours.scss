@@ -1,3 +1,10 @@
+// Legacy porting
+// TODO: fix how we use colours across project
+
 $lightest-blue: #d5e8f3;
-$light-grey: govuk-colour("grey-4");
-$link-visited-colour: $govuk-blue;
+$light-grey: govuk-colour("grey-3");
+$dark-grey: govuk-colour("grey-1");
+$black: govuk-colour("black");
+$white: govuk-colour("white");
+$link-visited-colour: govuk-colour("blue");
+$mainstream-brand: govuk-colour("blue")

@@ -34,7 +34,7 @@ a.hero-button {
     background-image: file-url("images/hero-button/arrow@2x.png");
   }
 
-  @include media(tablet) {
+  @include govuk-media-query($from: tablet) {
     display: inline-block;
     text-align: left;
   }

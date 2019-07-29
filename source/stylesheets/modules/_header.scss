@@ -69,16 +69,16 @@ $active-nav-color: #1d8feb;
     border-bottom: 10px solid $mainstream-brand;
   }
 
-  .header__container {
-    border-bottom: none;
-    width: auto;
-    max-width: none;
-    margin: 0 $gutter-half;
-
-    @include media(tablet) {
-      margin: 0 $gutter;
-    }
-  }
+  //.header__container {
+  //  border-bottom: none;
+  //  width: auto;
+  //  max-width: none;
+  //  margin: 0 $govuk-gutter-half;
+  //
+  //  @include govuk-media-query($from: tablet) {
+  //    margin: 0 $govuk-gutter;
+  //  }
+  //}
 }
 
 .header--without-border {
@@ -91,78 +91,78 @@ $active-nav-color: #1d8feb;
   }
 }
 
-.header__brand {
-  font-size: 30px;
+//.header__brand {
+//  font-size: 30px;
+//
+//  // Give brand focus outline on mobile
+//  &:after {
+//    content: ".";
+//    height: 0;
+//    clear: both;
+//    visibility: hidden;
+//  }
+//
+//  a:link,
+//  a:visited {
+//    text-decoration: none;
+//  }
+//
+//  a:hover {
+//    text-decoration: underline;
+//  }
+//
+//  .govuk-logo {
+//    float: left;
+//  }
+//
+//  @include screen {
+//    a:link,
+//    a:visited {
+//      color: $white;
+//    }
+//
+//    a:focus {
+//      background-color: inherit;
+//    }
+//
+//    @include govuk-media-query($from: tablet) {
+//      float: left;
+//
+//      .govuk-logo {
+//        float: none;
+//      }
+//
+//      a:hover {
+//        text-decoration: none;
+//        border-bottom: 1px solid $white;
+//      }
+//    }
+//  }
+//
+//  @include print {
+//    a:link,
+//    a:visited {
+//      color: $black;
+//    }
+//  }
+//}
 
-  // Give brand focus outline on mobile
-  &:after {
-    content: ".";
-    height: 0;
-    clear: both;
-    visibility: hidden;
-  }
-
-  a:link,
-  a:visited {
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-
-  .govuk-logo {
-    float: left;
-  }
-
-  @include screen {
-    a:link,
-    a:visited {
-      color: $white;
-    }
-
-    a:focus {
-      background-color: inherit;
-    }
-
-    @include media(tablet) {
-      float: left;
-
-      .govuk-logo {
-        float: none;
-      }
-
-      a:hover {
-        text-decoration: none;
-        border-bottom: 1px solid $white;
-      }
-    }
-  }
-
-  @include print {
-    a:link,
-    a:visited {
-      color: $black;
-    }
-  }
-}
-
-.header__title {
-  @include core-24;
-  display: block;
-  float: left;
-  clear: left;
-
-  @include media(tablet) {
-    display: inherit;
-    float: none;
-    clear: none;
-  }
-
-  .phase-banner {
-    margin-left: 5px;
-  }
-}
+//.header__title {
+//  @include core-24;
+//  display: block;
+//  float: left;
+//  clear: left;
+//
+//  @include govuk-media-query($from: tablet) {
+//    display: inherit;
+//    float: none;
+//    clear: none;
+//  }
+//
+//  .phase-banner {
+//    margin-left: 5px;
+//  }
+//}
 
 .header__navigation {
   @include screen {
@@ -205,7 +205,7 @@ $active-nav-color: #1d8feb;
     }
 
     ul {
-      border-top: 1px solid $grey-1;
+      border-top: 1px solid $dark-grey;
       margin: 0;
       padding: 8px 0 0;
     }
@@ -215,7 +215,7 @@ $active-nav-color: #1d8feb;
       margin: 2px 0;
     }
 
-    @include media(tablet) {
+    @include govuk-media-query($from: tablet) {
       display: block;
       clear: none;
       padding-top: 2px;
@@ -234,7 +234,7 @@ $active-nav-color: #1d8feb;
 
       li {
         float: left;
-        margin: 12px 0 0 $gutter-half;
+        margin: 12px 0 0 $govuk-gutter-half;
       }
     }
   }
@@ -252,7 +252,7 @@ $active-nav-color: #1d8feb;
   .header__navigation {
     display: none;
 
-    @include media(tablet) {
+    @include govuk-media-query($from: tablet) {
       display: block;
     }
   }
@@ -262,7 +262,7 @@ $active-nav-color: #1d8feb;
     float: right;
     color: $white;
     background: transparent;
-    border: 1px solid $grey-1;
+    border: 1px solid $dark-grey;
     border-radius: 3px;
     padding: 2px 6px 1px;
     font-size: 80%;
@@ -272,7 +272,7 @@ $active-nav-color: #1d8feb;
       display: none;
     }
 
-    @include media(tablet) {
+    @include govuk-media-query($from: tablet) {
       display: none;
     }
 
