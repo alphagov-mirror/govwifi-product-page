@@ -4,7 +4,7 @@ description: Follow these instructions to connect your Mac, iMac or Macbook to G
 ---
 
 <div class="govuk-width-container">
-  <%= partial "shared/support/breadcrumbs", locals: { page: "Connect a Mac, iMac or Macbook" } %>
+  <%= partial "shared/support/breadcrumbs", locals: {page: "Connect a Mac, iMac or Macbook"} %>
   <div class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-one-third">
@@ -13,7 +13,9 @@ description: Follow these instructions to connect your Mac, iMac or Macbook to G
 
       <main class="govuk-grid-column-two-thirds" role="main" id="main">
         <h1 class="govuk-heading-l">Connect to GovWifi using a Mac, iMac or Macbook</h1>
-        <p class="govuk-body">Once you have a GovWifi <%= link_to "username and password", "/about-govwifi/connect-to-govwifi", class: "govuk-link" %>, follow the steps below. Depending on your device, you may need to scroll down to see all the fields.</p>
+        <p class="govuk-body">Once you have a
+          GovWifi <%= link_to "username and password", "/about-govwifi/connect-to-govwifi", class: "govuk-link" %>,
+          follow the steps below. Depending on your device, you may need to scroll down to see all the fields.</p>
 
         <ol class="govuk-list govuk-list--number">
           <li>
@@ -27,12 +29,12 @@ description: Follow these instructions to connect your Mac, iMac or Macbook to G
             <%= partial 'shared/copy/password_instructions' %>
           </li>
           <li>
-            <p>Select <strong>Join</strong>. You will be asked to confirm the network is genuine by checking the certificate.</p>
+            <p>Select <strong>Join</strong>. You will be asked to confirm the network is genuine by checking the
+              certificate.</p>
             <%= image_tag "troubleshooting/mac-os-step-4.jpg", class: "img-fluid", alt: "Screenshot of Verify Certificate dialog on macOS" %>
           </li>
           <li>
             <p>Select <strong>Show Certificate.</strong></p>
-            <%= image_tag "troubleshooting/mac-os-step-5.jpg", class: "govuk-!-width-full", alt: "Screenshot of Verytify Certificate dialog details on macOS" %>
             <div class="govuk-warning-text">
               <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
               <strong class="govuk-warning-text__text">
@@ -50,6 +52,11 @@ description: Follow these instructions to connect your Mac, iMac or Macbook to G
           </li>
         </ol>
         <p class="govuk-body">You should now be connected to GovWifi.</p>
+
+        <p class="govuk-body">If you are using a device managed by your organisation, your permissions might be
+          restricted and you might not be able to trust the new GovWifi certificate. Follow the
+          instructions <%= link_to "here", "/support/update-govwifi-server-certificate/#no-permissions-to-trust-certificate", class: "govuk-link" %>
+          to get access.</p>
       </main>
     </div>
   </div>
